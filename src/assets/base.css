@@ -1,0 +1,20 @@
+:root {
+  --color-background: #ffffff;
+  --color-text: #333333;
+  --color-border: #cccccc;
+  --color-primary: #0066cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+  font-size: 16px;
+}
