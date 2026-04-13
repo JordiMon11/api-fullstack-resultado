@@ -60,13 +60,11 @@ const { t } = useI18n()
 const store = useConflictsStore()
 onMounted(() => store.fetchConflicts())
 
-// computed properties per als comptadors
 const activeCount   = computed(() => store.conflicts.filter(c => c.status === 'ACTIVE').length)
 const frozenCount   = computed(() => store.conflicts.filter(c => c.status === 'FROZEN').length)
 const endedCount    = computed(() => store.conflicts.filter(c => c.status === 'ENDED').length)
 const activeConflicts = computed(() => store.conflicts.filter(c => c.status === 'ACTIVE'))
 
-// Datos para gráfico (computed)
 const chartLabels = computed(() => [
   t('badges.active'),
   t('badges.frozen'),
